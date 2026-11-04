@@ -2,6 +2,8 @@
 
 Site da Ed&+ Concept, com decoração em impressão 3D, presentes personalizados e bolsas artesanais de crochê.
 
+**Site público:** https://maiconmafrah.github.io/edemais-concept/
+
 ## Recursos
 
 - Catálogo de oito peças reais, com filtros por categoria.
@@ -43,7 +45,9 @@ As fotos e as referências comerciais são da [Ed&+ Concept no Instagram](https:
 
 ## Publicar
 
-Publique o conteúdo de **`dist/`** em uma hospedagem de arquivos estáticos. Não é necessário executar uma etapa de build. Para usar outro endereço, atualize `og:url` e `og:image` em `dist/index.html` com o domínio definitivo.
+O GitHub Pages publica o conteúdo de **`dist/`** pelo workflow `.github/workflows/pages.yml`. Alterações em `dist/` enviadas à branch `main` são publicadas automaticamente. Também é possível iniciar o workflow “Publish website” manualmente pela aba **Actions** do repositório.
+
+Não é necessário executar uma etapa de build. Para usar outro endereço, atualize a URL canônica, `og:url` e `og:image` em `dist/index.html` com o domínio definitivo.
 
 ## Validação
 
