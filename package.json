@@ -1,0 +1,7 @@
+{
+  "name": "edemais-concept",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo da Ed&+ Concept, com pedidos pelo WhatsApp.",
+  "scripts": { "dev": "node server.mjs", "start": "node server.mjs", "check": "node --check dist/app.js" }
+}
