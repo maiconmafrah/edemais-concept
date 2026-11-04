@@ -4,6 +4,10 @@ Site da Ed&+ Concept, com decoração em impressão 3D, presentes personalizados
 
 **Site público:** https://maiconmafrah.github.io/edemais-concept/
 
+**Segunda proposta visual:** https://maiconmafrah.github.io/edemais-concept/modelo-2/
+
+O primeiro modelo usa uma composição editorial com verde, creme e dourado. O segundo tem tipografia forte, verde escuro, verde-lima e coral, com outro formato de apresentação do catálogo. As duas propostas usam o mesmo catálogo, as mesmas fotos e as mesmas funções de atendimento em `dist/app.js`.
+
 ## Recursos
 
 - Catálogo de oito peças reais, com filtros por categoria.
@@ -32,6 +36,7 @@ dist/
   refinements.css  Galeria, controles de toque e legibilidade
   app.js           Catálogo, filtros, galeria e WhatsApp
   assets/          Fotos reais e ícone da marca
+  modelo-2/        Segunda proposta visual independente
 server.mjs         Servidor local para desenvolvimento
 ```
 

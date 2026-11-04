@@ -1,4 +1,5 @@
 'use strict';
+const CATALOG_BASE = new URL('.', document.currentScript.src);
 const WHATSAPP_NUMBER = '5547997707312';
 const INSTAGRAM = 'https://www.instagram.com/edemaisconcept/';
 const products = [
@@ -11,6 +12,12 @@ const products = [
   { id:'chaveiro', name:'Fé para levar com você', category:'Presentes em 3D', filters:['decoracao'], image:'assets/1590b5466572a04e.jpg', position:'50% 58%', description:'Um pequeno gesto com muito significado. A miniatura de Jesus com coração aparece no perfil como uma ideia de presente em formato de chaveiro.', post:'reel/DfNy6wLugzP/' },
   { id:'cortadores', name:'Criatividade à mesa', category:'Especial de Natal · 3D', filters:['natal'], image:'assets/5b64e038e7cde7f2.webp', fit:'contain', position:'50% 50%', description:'Um conjunto de cortadores com formas natalinas para inspirar novas criações. Consulte os detalhes da peça e as orientações de uso diretamente com a Ed&+ Concept.', post:'p/DfH1qlaR2iM/' }
 ];
+
+// Both visual proposals use the same catalog and original product photos.
+products.forEach(product => {
+  product.image = new URL(product.image, CATALOG_BASE).href;
+  product.photos?.forEach(photo => { photo.src = new URL(photo.src, CATALOG_BASE).href; });
+});
 
 function whatsappUrl(message) { return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`; }
 // Integration point for future analytics; no advertising trackers or personal data are sent.
